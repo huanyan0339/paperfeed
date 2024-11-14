@@ -1,12 +1,4 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: './src/.env' });
-console.log(process.env.NOTION_API_TOKEN);
-const {
-    NOTION_API_TOKEN,
-    NOTION_READER_DATABASE_ID,
-    NOTION_FEEDS_DATABASE_ID,
-    CI,
-  } = process.env;
 import { markdownToBlocks } from '@tryfabric/martian';
 import TurndownService from 'turndown';
 import { Client, LogLevel } from '@notionhq/client';
@@ -14,9 +6,13 @@ import Parser from 'rss-parser';
 import pLimit from 'p-limit';
 import fetch from 'node-fetch';
 
-
-dotenv.config({ path: './src/.env' });
-console.log(process.env.NOTION_API_TOKEN);  // 打印出 API token，确保它是正确的
+dotenv.config();
+const {
+    NOTION_API_TOKEN,
+    NOTION_READER_DATABASE_ID,
+    NOTION_FEEDS_DATABASE_ID,
+    CI,
+  } = process.env;
 
 const logLevel = CI ? LogLevel.INFO : LogLevel.DEBUG;
 const DEEPL_API_URL = 'https://api.deepl.com/v2/translate';''
