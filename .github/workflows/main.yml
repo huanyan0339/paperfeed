@@ -20,7 +20,11 @@ jobs:
         with:
           node-version: 14
 
+      - name: Install dependencies
+        run: |
+          npm install
+
       - name: Update Notion Feed
         run: |
-          curl -o paperfeed.js https://raw.githubusercontent.com/huanyan0339/paperfeed/build/dist/paperfeed.js
+          curl -o paperfeed.js https://raw.githubusercontent.com/huanyan0339/paperfeed/refs/heads/master/src/paperfeed.js
           node paperfeed.js
