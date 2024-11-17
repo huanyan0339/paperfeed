@@ -26,5 +26,5 @@ jobs:
 
       - name: Update Notion Feed
         run: |
-          curl -o paperfeed.js https://raw.githubusercontent.com/huanyan0339/paperfeed/refs/heads/master/src/paperfeed.js
+          curl -o paperfeed.js https://raw.githubusercontent.com/huanyan0339/paperfeed/master/src/paperfeed.js
           node paperfeed.js
