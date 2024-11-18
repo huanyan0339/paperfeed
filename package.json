@@ -51,11 +51,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ravgeetdhillon/notion-feed-reader"
+    "url": "git+https://github.com/huanyan0339/paperfeed"
   },
   "bugs": {
-    "url": "https://github.com/ravgeetdhillon/notion-feed-reader/issues"
+    "url": "https://github.com/huanyan0339/paperfeed/issues"
   },
-  "homepage": "https://github.com/ravgeetdhillon/notion-feed-reader",
+  "homepage": "https://github.com/huanyan0339/paperfeed",
   "type": "module"
 }
